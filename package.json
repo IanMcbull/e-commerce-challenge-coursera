@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "DEBUG=server nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/IanMcbull/e-commerce-challenge-coursera#readme",
   "dependencies": {
     "chalk": "^4.1.2",
+    "debug": "^4.3.2",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongoose": "^6.0.12"
@@ -28,5 +29,12 @@
   "devDependencies": {
     "morgan": "^1.10.0",
     "nodemon": "^2.0.14"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "PORT": 7700
+    }
   }
 }

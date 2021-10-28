@@ -3,11 +3,21 @@
     font-family: 'brand-font';
     src: url(./fonts/betty_molly/Betty\ Molly\ -\ Personal\ Use.otf);
 }
+:root{
+    --primary-color: #fdf8ec;
+    --secondary-color:#fc683f;
+
+
+}
 * {
     box-sizing: border-box;
     margin: 0;
 }
-nav{
+body{
+    background: var(--primary-color);
+    ;
+}
+/* nav{
     margin: 10px;
     display: flex;
     justify-content: space-between;
@@ -29,4 +39,52 @@ nav{
     font-family: 'Zen Kurenaido', sans-serif;
     font-size:1.3rem;
     color: black;
-}
+} */
+
+header {
+    border-bottom: 2px solid #000000;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+ #logo{
+    font-family: 'brand-font', sans-serif;
+    font-size: 1.5rem; 
+ } 
+  /* header h1 {
+    border: 1px solid #000000;
+    float: left;
+  } */
+  
+  .highlight {
+    background-color: #000000;
+    color: #ff0000;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 150px;
+  }
+  .list-link{
+    padding: 5px;
+  }
+  #sign{
+      color: var(--secondary-color);
+      font-weight: bolder;
+  }
+  .links{
+    text-decoration: none;
+    margin-right: 40px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size:1.3rem;
+    color: black;
+    padding-bottom: 10px;
+  }
+  .links:hover{
+      color: black;
+     border-bottom: 2px solid var(--secondary-color);
+     font-weight: bolder;
+  }
