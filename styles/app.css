@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@font-face {
+    font-family: 'brand-font';
+    src: url(./fonts/betty_molly/Betty\ Molly\ -\ Personal\ Use.otf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-brand{
+    font-family: 'brand-font', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;   
+}
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-elements,a{
+    text-decoration: none;
+    margin-right: 20px;
+    list-style: none;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size:1.3rem;
+    color: black;
+}
