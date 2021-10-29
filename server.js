@@ -9,24 +9,26 @@ const servicesRouter = require('./routes/servicesRoutes');
 const locationRoute = require('./routes/locationRoutes');
 const contactRouter = require('./routes/contactRoute');
 
-app.use(express.static(path.join(__dirname,'/styles')));
+app.use(express.static(path.join(__dirname, '/styles')));
 app.set('view engine', 'ejs');
 app.use(morgan('dev'));
 app.use('/services', servicesRouter);
 app.use('/location', locationRoute);
 app.use('/contact', contactRouter);
 
-try{
-  //Fetch the homepage
-  app.get('/',(req,res)=>{
-  res.render('index',{title:'Shaves & Trims'});
-  })
-}catch(err){
-  throw new Error(err);
+try {
+    //Fetch the homepage
+    app.get('/', (req, res) => {
+        res.render('index', {
+            title: 'Shaves & Trims'
+        });
+    })
+} catch (err) {
+    throw new Error(err);
 }
 
 
 //Listen for connections
-app.listen(port,()=>{
-  debug(chalk.magentaBright(`running on port: ${chalk.bold.greenBright(port)}`));
+app.listen(port, () => {
+    debug(chalk.magentaBright(`running on port: ${chalk.bold.greenBright(port)}`));
 });

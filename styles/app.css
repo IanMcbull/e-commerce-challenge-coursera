@@ -6,8 +6,6 @@
 :root{
     --primary-color: #fdf8ec;
     --secondary-color:#fc683f;
-
-
 }
 * {
     box-sizing: border-box;
@@ -15,7 +13,7 @@
 }
 body{
     background: var(--primary-color);
-    ;
+    overflow-x: hidden;    
 }
 /* nav{
     margin: 10px;
@@ -43,7 +41,6 @@ body{
 
 header {
     border-bottom: 2px solid #000000;
-    margin: 10px;
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -51,6 +48,7 @@ header {
  #logo{
     font-family: 'brand-font', sans-serif;
     font-size: 1.5rem; 
+    border: 1px solid black;
  } 
   /* header h1 {
     border: 1px solid #000000;
@@ -59,14 +57,14 @@ header {
   
   .highlight {
     background-color: #000000;
-    color: #ff0000;
+    color: var(--secondary-color);
   }
   
   header nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-right: 150px;
+    margin-right: 200px;
   }
   .list-link{
     padding: 5px;
@@ -88,3 +86,51 @@ header {
      border-bottom: 2px solid var(--secondary-color);
      font-weight: bolder;
   }
+  #landing_page{
+      height: 90vh;
+      width: 100%;
+      /* position: relative;
+      bottom: 10px; */
+  }
+  #right_view{
+      background: var(--secondary-color);
+  }
+  .cont{
+      position: relative;
+      top:30%;
+      bottom: 30%;
+      font-family: 'Zen Kurenaido', sans-serif;
+      left: 10%;
+    
+  }
+  .sc-text{
+      font-size: 1.3em;
+      font-weight: bold;
+  }
+  .header-content{
+      width: min-content;
+  }
+  .content-header{
+      font-weight: bolder;
+      font-size: 4.3em;
+      line-height: 1;
+  }
+  .fa-youtube{
+      color: red;
+  }
+  .fa-heart{
+      color: yellowgreen;
+  }
+  .bt{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 10px 8px rgba(0,0,0,0.75);
+  }
+  .bt-col{
+      background: var(--secondary-color);
+  }
+  .bt-white{
+      background:#fdf8ec;    ;
+  }
+  
