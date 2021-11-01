@@ -281,4 +281,68 @@ header {
     background: #ffdc66;
     cursor: pointer;
   }
-  
+  #our_services{
+    font-family: 'Zen Kurenaido', sans-serif;
+  }
+  .head-paragraph{
+    color: var(--secondary-color);
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  .head-heading{
+    font-weight: bolder;
+    font-size: 2.5em;
+  }
+  .head-text{
+    color: #6b6b6b;
+    font-weight: bold;
+    ;
+    font-size: 1.2em;
+  }
+  .card-title{
+    font-weight: bolder;
+    font-size: 1.3em;
+  }
+  /* .card{
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+  } */
+  .card{
+    min-width: 300px;
+  }
+  .card:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 0px 10px 10px rgba(252, 104, 63, 1);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  #about_section{
+    margin-top: 150px;
+    position: relative;
+    margin-left: 15%;
+    font-family: 'Zen Kurenaido', sans-serif;
+  }
+  .head-paragraph-about{
+    font-size:1.3rem;
+    color:var(--secondary-color); 
+  }
+  .content-header-about{
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .head-text-about{
+    font-size: 1.3rem;
+  }
+#team{
+  margin-top: 150px;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+.card-imgs{
+  border: 5px solid var(--secondary-color);
+  max-height: 500px;
+  max-width: 300px;
+}
+#team-bio{
+  margin-left: 15%;
+}
