@@ -801,6 +801,6 @@ footer{
     width: fit-content;
   }
   .footer-icons{
-    width: fit-content;
+    width: 300px;
   }
 }
