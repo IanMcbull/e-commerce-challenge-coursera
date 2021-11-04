@@ -11,7 +11,7 @@ const contactRouter = require('./routes/contactRoute');
 const loginRouter = require('./routes/loginRoute');
 app.use(express.static(path.join(__dirname, '/styles')));
 app.set('view engine', 'ejs');
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use('/services', servicesRouter);
 app.use('/location', locationRoute);
 app.use('/contact', contactRouter);
