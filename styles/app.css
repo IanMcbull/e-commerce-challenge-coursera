@@ -798,4 +798,7 @@ footer{
     font-weight: bolder;
     font-size: 1.2rem;
   }
+  footer{
+    background: #000000;
+  }
 }
