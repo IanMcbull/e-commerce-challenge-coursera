@@ -714,14 +714,7 @@ footer{
   #about-img{
     display: none;
   }
-  
-  #about_cont{
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-  
 }
-
 @media (max-width:800px) {
   .cont{
     position: relative;
@@ -805,5 +798,4 @@ footer{
     font-weight: bolder;
     font-size: 1.2rem;
   }
-}
 }
