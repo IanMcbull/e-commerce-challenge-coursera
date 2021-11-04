@@ -69,6 +69,9 @@ nav a{
   margin-right: 60px;
   font-weight: bold;
 }
+nav{
+  z-index: 1;
+}
 #logo {
   font-family: 'brand-font', sans-serif;
   font-size: 1.5rem;
@@ -681,6 +684,7 @@ footer{
   position: relative;
   top:15px;
   left:35%;
+  
 }
 #sub_btn{
   width: 100%;
@@ -735,8 +739,30 @@ footer{
     margin-top: 10px;
     position: relative;
     right:50px;
+  
+}
+#map{
+  display: none;
+}
+#loc-left-side{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+  #icons-login{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 300px;
+    /* border: 3px solid black; */
+    position: relative;
+    top:15px;
+    left:20%;
+    
   }
   #testimonials{
+    display: none;
+  }
+  .loc-left-side{
     display: none;
   }
 }
@@ -755,4 +781,19 @@ footer{
   .bt-white{
     margin-top: 30px;
   }
+  #login-left-side{
+    display: none;
+  }
+  #icons-login{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 300px;
+    /* border: 3px solid black; */
+    position: relative;
+    top:15px;
+    left:20%;
+    
+  }
+ 
+  
 }
