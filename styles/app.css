@@ -800,4 +800,7 @@ footer{
   .footer-initiatives{
     width: fit-content;
   }
+  .footer-icons{
+    width: fit-content;
+  }
 }
