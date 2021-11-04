@@ -745,11 +745,6 @@ footer{
 #map{
   display: none;
 }
-#about_cont{
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
-}
 #loc-left-side{
   display: flex;
   flex-direction: column;
