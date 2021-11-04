@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "DEBUG=server nodemon server.js",
-    "span":"nodemon server.js"
+    "span": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "debug": "^4.3.2",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "mapbox-gl": "^2.5.1",
     "mongoose": "^6.0.12"
   },
   "devDependencies": {

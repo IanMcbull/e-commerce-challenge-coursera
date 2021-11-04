@@ -7,16 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://img.icons8.com/color/48/000000/scissors.png">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+
     <link rel="stylesheet" href="/app.css" type="text/css">
     <title><%= title  %> </title>
 </head>
 
 <body>
-   <%- include('./partials/nav.ejs') %>
-   
-   <script src="js/bootstrap.min.js"></script>
+    <%- include('./partials/nav.ejs') %>
+   <div class="row" id="contact-us">
+       <div class="col-md-3">
+        <div class="d-flex flex-column mt-4 p-4">
+            <h2>GET IN TOUCH</h2>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis vel repellat cumqu</p>
+            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur libero minus nisi architecto vero excepturi molestiae enim necessitatibus tempora est!</p>
+            <div class="contact-card mt-5">
+                <h3>DIRECT CONTACT</h3>
+                <p class="mt-3">Address:</p>
+                <p>Phone:</p>
+                <p>Location:</p>
+                <p>Email:</p>
+            </div>
+            <div class="contact-card mt-5">
+                <h3>SECONDARY CONTACT</h3>
+                <p class="mt-3">Address:</p>
+                <p>Phone:</p>
+                <p>Location:</p>
+                <p>Email:</p>
+            </div>
+        </div>
+       </div>
+       <div class="col-md-9">
+        <div id="map">
+        
+        </div>
+       </div>
+   </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/mapbox.js"></script>
 </body>
 
 </html>
